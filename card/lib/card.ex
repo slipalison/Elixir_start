@@ -42,8 +42,7 @@ defmodule Card do
   end
 
   def deal(deck, hand_size) do
-  
-    
+        
   end
 
 end
