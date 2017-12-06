@@ -17,8 +17,8 @@ defmodule Card do
   end
 
   def create_deck do
-    values = ["Ace", "Two", "Tree", "Four", "Five"]
-    suits = ["Spades", "Clubs", "Hearts", "Diamonts"]
+    values = ["Ás", "2", "3", "4", "5", "6", "7", "8", "9", "Valete", "Dama", "Rei"]
+    suits = ["Espada", "Copa", "Pau", "Ouro"]
 
    # cards = for value <- values do 
    #   for suit <-suits do
@@ -28,7 +28,7 @@ defmodule Card do
    # List.flatten(cards)
 
     for value <-values, suit<-suits do
-      "#{value} of #{suit}"
+      "#{value} de #{suit}"
     end
 
   end
