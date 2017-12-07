@@ -1,3 +1,24 @@
+
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        <%= gettext "Welcome to %{name}!", name: "Phoenix" %>
+      </h1>
+      <h2 class="subtitle">
+       <h2></h2>
+  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
 <div class="jumbotron">
   <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
   <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>

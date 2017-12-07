@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,28 +9,52 @@
     <meta name="author" content="">
 
     <title>Hello Discuss!</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-  </head>
+    <!--link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
+</head>
 
-  <body>
-    <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
+<body>
+    <!-- Main container -->
+    <nav class="level">
+        <!-- Left side -->
+        <div class="level-left">
+            <div class="level-item">
+                <p class="subtitle is-5">
+                    <strong>123</strong> posts
+                </p>
+            </div>
 
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+        </div>
 
-      <main role="main">
-        <%= render @view_module, @view_template, assigns %>
-      </main>
+        <!-- Right side -->
+        <div class="level-right">
+            <p class="level-item"><strong>All</strong></p>
+            <p class="level-item"><a>Published</a></p>
+            <p class="level-item"><a>Drafts</a></p>
+            <p class="level-item"><a>Deleted</a></p>
+            <p class="level-item"><a class="button is-success">New</a></p>
+        </div>
+    </nav>
 
-    </div> <!-- /container -->
+    <div class="container is-fluid">
+        <main role="main">
+            <%= render @view_module, @view_template, assigns %>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                </p>
+            </div>
+        </div>
+
+
+    </footer>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-  </body>
+</body>
+
 </html>
