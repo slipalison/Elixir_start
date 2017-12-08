@@ -23,5 +23,9 @@ defmodule  DiscussWeb.TopicController do
        end
     end
 
+    def index(conn, _params) do
+        
+    end
+
 
 end
