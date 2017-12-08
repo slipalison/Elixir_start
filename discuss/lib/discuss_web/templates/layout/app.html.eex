@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Alison">
 
     <title>Hello Discuss!</title>
-    <!--link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>"-->
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/appcustom.css") %>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
 </head>
 
@@ -22,8 +22,8 @@
   <div class="container">
 
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+    <a class="navbar-item" href="/">
+     Discuss
     </a>
 
 

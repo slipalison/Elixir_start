@@ -1,14 +1,16 @@
 
-<section class="hero is-primary">
+
+
+
+
+<section class="hero is-medium is-primary is-bold">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
         <%= gettext "Welcome to %{name}!", name: "Phoenix" %>
       </h1>
       <h2 class="subtitle">
-       <h2></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
-
+        <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
       </h2>
     </div>
   </div>
@@ -16,16 +18,14 @@
 
 
 
+<div class="box">
+  <article class="media">
 
-
-
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
-</div>
-
-<div class="row marketing">
-  <div class="col-lg-6">
+    <div class="media-content">
+      <div class="content">
+        
+<div class="tile is-ancestor">
+  <div class="tile is-vertical ">
     <h4>Resources</h4>
     <ul>
       <li>
@@ -40,7 +40,7 @@
     </ul>
   </div>
 
-  <div class="col-lg-6">
+  <div class="tile is-vertical">
     <h4>Help</h4>
     <ul>
       <li>
@@ -55,3 +55,25 @@
     </ul>
   </div>
 </div>
+      </div>
+      <nav class="level is-mobile">
+        <div class="level-left">
+          <a class="level-item">
+            <span class="icon is-small"><i class="fa fa-reply"></i></span>
+          </a>
+          <a class="level-item">
+            <span class="icon is-small"><i class="fa fa-retweet"></i></span>
+          </a>
+          <a class="level-item">
+            <span class="icon is-small"><i class="fa fa-heart"></i></span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </article>
+</div>
+
+
+
+
+
