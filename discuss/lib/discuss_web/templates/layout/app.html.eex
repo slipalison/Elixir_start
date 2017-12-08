@@ -9,7 +9,7 @@
     <meta name="author" content="Alison">
 
     <title>Hello Discuss!</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/appcustom.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
 </head>
 
