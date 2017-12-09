@@ -9,7 +9,9 @@
     <meta name="author" content="Alison">
 
     <title>Hello Discuss!</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <!--link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>"-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
 </head>
 
@@ -25,9 +27,6 @@
     <a class="navbar-item" href="/">
      Discuss
     </a>
-
-
-
     <div id="navbarBurger" class="navbar-burger burger" data-target="navMenuDocumentation">
       <span></span>
       <span></span>
@@ -38,19 +37,21 @@
   <div id="navMenuDocumentation" class="navbar-menu">
     <div class="navbar-start">
     </div>
-
     <div class="navbar-end">
     </div>
   </div>
 
   </div>
-        </nav>
+ </nav>
 </div>
 
 
 
+
     <div class="container">
-            <%= render @view_module, @view_template, assigns %>
+        <p class="subtitle is-5"role="alert"><%= get_flash(@conn, :info) %></p>
+        <p class="subtitle is-5" role="alert"><%= get_flash(@conn, :error) %></p>
+        <%= render @view_module, @view_template, assigns %>
     </div>
    
    

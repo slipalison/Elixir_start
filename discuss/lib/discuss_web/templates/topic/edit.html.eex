@@ -1,17 +1,4 @@
-<section class="hero is-primary">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Criando Topic
-      </h1>
-      <h2 class="subtitle">
-        Phoenix
-      </h2>
-    </div>
-  </div>
-</section>
-
-<%= form_for @changeset, topic_path(@conn, :create), fn f -> %>
+<%= form_for @changeset, topic_path(@conn, :update, @topic), fn f -> %>
     <div class="field">
      <label class="label">Title</label>
        <div class="control">
@@ -27,7 +14,5 @@
     <%= button("Cancel", to: topic_path(@conn, :index), method: "get", class: "button is-text")  %>
   </div>
 </div>
-
-    
 
 <% end %>

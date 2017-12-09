@@ -1,0 +1,60 @@
+
+
+
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        <%= gettext "Welcome to %{name}!", name: "Phoenix" %>
+      </h1>
+      <h2 class="subtitle">
+        <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<nav class="panel">
+    <p class="panel-tabs">
+    <%= link to: topic_path(@conn, :new) do %>
+    New
+    <% end %>
+  </p>
+    <p class="panel-heading">
+    Listar conversas
+  </p>
+  <div class="panel-block">
+    <p class="control has-icons-left">
+      <input class="input is-small" type="text" placeholder="buscar">
+      <span class="icon is-small is-left">
+        <i class="fa fa-search"></i>
+      </span>
+    </p>
+  </div>
+
+    <%= for topic <- @topics do %>
+         <a class="panel-block is-active">
+           <span class="panel-icon">
+             <i class="fa fa-book"></i>
+           </span>
+           <%= topic.title %> 
+            <%= button("editar", to: topic_path(@conn, :edit, topic), method: "get", class: "button is-link is-rounded") %> 
+             <%= button("apagar", to: topic_path(@conn, :delete, topic), method: "delete", class: "button is-link is-rounded") %> 
+          
+         </a>
+  
+  
+     <% end %>
+  <%# <label class="panel-block">
+    <input type="checkbox">
+    remember me
+  </label>
+
+  <div class="panel-block">
+    <button class="button is-link is-outlined is-fullwidth">
+      reset all filters
+    </button>
+  </div> %>
+</nav>
