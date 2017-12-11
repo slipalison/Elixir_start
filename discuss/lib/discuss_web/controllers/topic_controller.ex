@@ -27,6 +27,7 @@ defmodule  DiscussWeb.TopicController do
     end
 
     def index(conn, _params) do
+        IO.inspect(conn.assigns)
         render conn, "index.html", topics: Repo.all(Topic)
     end
 
